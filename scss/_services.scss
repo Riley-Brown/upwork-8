@@ -1,0 +1,23 @@
+// Styling for the services section
+.service-box {
+  max-width: 400px;
+}
+
+#services {
+  padding: 50px;
+  background: $primary;
+  color: #fff;
+
+  .text-muted {
+    color: #fff !important;
+    opacity: 0.8;
+  }
+
+  i {
+    color: #fff;
+  }
+
+  hr {
+    border-color: #fff;
+  }
+}
