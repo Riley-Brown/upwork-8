@@ -269,6 +269,11 @@ img::-moz-selection {
   border-color: #fff;
 }
 
+.featured-on {
+  margin: 50px 0;
+  font-size: 3rem;
+}
+
 .portfolio-box {
   position: relative;
   display: block;
@@ -276,7 +281,7 @@ img::-moz-selection {
   margin: 0 auto;
 }
 .portfolio-box img {
-  min-height: 533px;
+  min-height: 565px;
 }
 .portfolio-box .portfolio-box-caption {
   position: absolute;
