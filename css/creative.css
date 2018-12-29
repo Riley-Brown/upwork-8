@@ -275,6 +275,9 @@ img::-moz-selection {
   max-width: 650px;
   margin: 0 auto;
 }
+.portfolio-box img {
+  min-height: 533px;
+}
 .portfolio-box .portfolio-box-caption {
   position: absolute;
   bottom: 0;
