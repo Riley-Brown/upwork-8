@@ -279,10 +279,6 @@ img::-moz-selection {
   display: block;
   margin: 0 auto;
 }
-.portfolio-box img {
-  height: 350px;
-  width: 100%;
-}
 .portfolio-box .portfolio-box-caption {
   position: absolute;
   bottom: 0;
