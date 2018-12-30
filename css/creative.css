@@ -277,11 +277,11 @@ img::-moz-selection {
 .portfolio-box {
   position: relative;
   display: block;
-  max-width: 650px;
   margin: 0 auto;
 }
 .portfolio-box img {
-  min-height: 565px;
+  height: 350px;
+  width: 100%;
 }
 .portfolio-box .portfolio-box-caption {
   position: absolute;
