@@ -186,8 +186,17 @@ img::-moz-selection {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/1500px.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@media (max-width: 600px) {
+  .landing {
+    height: auto;
+    background-position: right;
+  }
 }
 .landing .landing-wrapper {
   display: flex;
@@ -209,10 +218,22 @@ img::-moz-selection {
   min-width: 600px;
   text-align: center;
 }
+@media (max-width: 992px) {
+  .landing .landing-container {
+    min-width: 100%;
+    padding: 0 20px;
+    margin-top: 10vh;
+  }
+}
 .landing .landing-container h1 {
   font-size: 2.5rem;
   font-family: "Lato", sans-serif;
   font-weight: 900;
+}
+@media (max-width: 992px) {
+  .landing .landing-container h1 {
+    font-size: 2.2rem;
+  }
 }
 .landing .supporting-text {
   font-size: 1.3rem;
