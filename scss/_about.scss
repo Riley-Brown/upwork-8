@@ -19,7 +19,12 @@
 
   img {
     max-height: 400px;
+
     // margin-left: auto;
     // display: block;
+    @media(max-width: 992px) {
+      display: block;
+      margin: 30px auto 0;
+    }
   }
 }

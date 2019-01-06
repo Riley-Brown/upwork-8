@@ -384,6 +384,12 @@ img::-moz-selection {
 .about-section img {
   max-height: 400px;
 }
+@media (max-width: 992px) {
+  .about-section img {
+    display: block;
+    margin: 30px auto 0;
+  }
+}
 
 .my-story {
   border: 1px solid lightgray;
