@@ -270,6 +270,15 @@ img::-moz-selection {
     border-right-color: transparent;
   }
 }
+.modal-body {
+  line-height: 2;
+  padding-bottom: 0;
+}
+.modal-body img {
+  float: right;
+  max-height: 700px;
+}
+
 .service-box {
   max-width: 400px;
 }
@@ -360,11 +369,20 @@ img::-moz-selection {
 .about-section {
   color: #222;
   line-height: 2;
-  padding: 50px;
+  padding: 50px 50px 0;
+}
+.about-section .row {
+  align-items: center;
+}
+.about-section .row .col-lg-8 {
+  line-height: 2;
 }
 .about-section .btn {
   background: #d94aa0;
   color: white;
+}
+.about-section img {
+  max-height: 400px;
 }
 
 .my-story {

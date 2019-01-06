@@ -1,10 +1,25 @@
 .about-section {
   color: #222;
   line-height: 2;
-  padding: 50px;
+  padding: 50px 50px 0;
+
+  .row {
+    // border: 1px solid red;
+    align-items: center;
+
+    .col-lg-8 {
+      line-height: 2;
+    }
+  }
 
   .btn {
     background: $primary;
     color: white;
+  }
+
+  img {
+    max-height: 400px;
+    // margin-left: auto;
+    // display: block;
   }
 }
