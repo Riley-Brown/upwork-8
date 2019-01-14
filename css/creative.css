@@ -371,18 +371,30 @@ img::-moz-selection {
   line-height: 2;
   padding: 50px 50px 0;
 }
-.about-section .row {
+.about-section .my-story-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  max-width: 1024px;
+  margin: auto;
   align-items: center;
 }
-.about-section .row .col-lg-8 {
-  line-height: 2;
+@media (max-width: 860px) {
+  .about-section .my-story-container {
+    flex-direction: column;
+  }
+}
+.about-section .my-story-container p {
+  max-width: 500px;
 }
 .about-section .btn {
   background: #d94aa0;
   color: white;
 }
 .about-section img {
-  max-height: 400px;
+  max-height: 500px;
+  margin-right: auto;
+  display: block;
 }
 @media (max-width: 992px) {
   .about-section img {
