@@ -288,6 +288,9 @@ img::-moz-selection {
   background: #d94aa0;
   color: #fff;
 }
+#services .container {
+  max-width: 960px;
+}
 #services .text-muted {
   color: #fff !important;
   opacity: 0.8;
@@ -297,6 +300,9 @@ img::-moz-selection {
 }
 #services hr {
   border-color: #fff;
+}
+#services .text-center {
+  padding: 0 !important;
 }
 
 .featured-on {
