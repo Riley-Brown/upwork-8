@@ -104,7 +104,7 @@
         </button>
       </div>
       <div>
-        <img src="img/ALI_07_resized.png" alt="">
+        <img data-src="img/ALI_07_resized.png" class="lazyload" alt="Ali Boone">
       </div>
     </div>
   </section>
@@ -175,78 +175,80 @@
   <section class="p-0" id="portfolio">
     <div class="container-fluid p-0">
       <div class="row no-gutters popup-gallery">
+
         <div class="col-lg-3 col-sm-6">
           <a class="portfolio-box" href="img/featured-section-images/foxbusiness-logo.jpg">
-            <img class="img-fluid" src="img/featured-section-images/foxbusiness-logo.jpg" alt="" />
+            <img class="img-fluid lazyload" data-src="img/featured-section-images/foxbusiness-logo.jpg" alt="" />
             <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-              </div>
+              <div class="portfolio-box-caption-content"></div>
             </div>
           </a>
         </div>
+
         <div class="col-lg-3 col-sm-6">
           <a class="portfolio-box" href="img/featured-section-images/network.jpg">
-            <img class="img-fluid" src="img/featured-section-images/network.jpg" alt="" />
+            <img class="img-fluid lazyload" data-src="img/featured-section-images/network.jpg" alt="" />
             <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-              </div>
+              <div class="portfolio-box-caption-content"></div>
             </div>
           </a>
         </div>
+
         <div class="col-lg-3 col-sm-6">
           <a class="portfolio-box" href="img/featured-section-images/donnies-success.jpg">
-            <img class="img-fluid" src="img/featured-section-images/donnies-success.jpg" alt="" />
+            <img class="img-fluid lazyload" data-src="img/featured-section-images/donnies-success.jpg" alt="" />
             <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-              </div>
+              <div class="portfolio-box-caption-content"></div>
             </div>
           </a>
         </div>
+
         <div class="col-lg-3 col-sm-6">
           <a class="portfolio-box" href="img/featured-section-images/mi2.jpg">
-            <img class="img-fluid" src="img/featured-section-images/mi2.jpg" alt="" />
+            <img class="img-fluid lazyload" data-src="img/featured-section-images/mi2.jpg" alt="" />
             <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-              </div>
+              <div class="portfolio-box-caption-content"></div>
             </div>
           </a>
         </div>
+
         <div class="col-lg-3 col-sm-6">
           <a class="portfolio-box" href="img/featured-section-images/breakthrough.jpg">
-            <img class="img-fluid" src="img/featured-section-images/breakthrough.jpg" alt="" />
+            <img class="img-fluid lazyload" data-src="img/featured-section-images/breakthrough.jpg" alt="" />
             <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-              </div>
+              <div class="portfolio-box-caption-content"></div>
             </div>
           </a>
         </div>
+
         <div class="col-lg-3 col-sm-6">
           <a class="portfolio-box" href="img/featured-section-images/hack.jpg">
-            <img class="img-fluid" src="img/featured-section-images/hack.jpg" alt="" />
+            <img class="img-fluid lazyload" data-src="img/featured-section-images/hack.jpg" alt="" />
             <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-              </div>
+              <div class="portfolio-box-caption-content"></div>
             </div>
           </a>
         </div>
+
         <div class="col-lg-3 col-sm-6">
           <a class="portfolio-box" href="img/featured-section-images/daily-grind.jpg">
-            <img class="img-fluid" src="img/featured-section-images/daily-grind.jpg" alt="" />
+            <img class="img-fluid lazyload" data-src="img/featured-section-images/daily-grind.jpg" alt="" />
             <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-              </div>
+              <div class="portfolio-box-caption-content"></div>
             </div>
           </a>
         </div>
+
         <div class="col-lg-3 col-sm-6">
           <a class="portfolio-box" href="img/featured-section-images/joker-logo.jpg">
-            <img class="img-fluid" src="img/featured-section-images/joker-logo.jpg" alt="" />
+            <img class="img-fluid lazyload" data-src="img/featured-section-images/joker-logo.jpg" alt="" />
             <div class="portfolio-box-caption">
               <div class="portfolio-box-caption-content">
               </div>
             </div>
           </a>
         </div>
+
       </div>
     </div>
   </section>
@@ -325,7 +327,7 @@
             next rent payment would come from, and having to drink from the firehose when it came to adjusting my
             overly-controlled mindset.
           </p>
-          <img src="img/ALI_07-cropped_resized.png" alt="">
+          <img data-src="img/ALI_07-cropped_resized.png" class="lazyload" alt="Ali Boone">
           <p>
             Despite being flung around lie a ragdoll on the entrepreneurial roller coaster,
             my
@@ -376,8 +378,12 @@
 
   <!-- hide spinner after load -->
   <script>
+    // lazy load images  on full site load
+
+
     $(window).on('load', function () {
       $('.fullscreen-spinner').fadeOut();
+
     })
   </script>
 </body>
