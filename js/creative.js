@@ -1,18 +1,17 @@
-(function($) {
+(function ($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (
       location.pathname.replace(/^\//, "") ==
-        this.pathname.replace(/^\//, "") &&
+      this.pathname.replace(/^\//, "") &&
       location.hostname == this.hostname
     ) {
       var target = $(this.hash);
       target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
       if (target.length) {
-        $("html, body").animate(
-          {
+        $("html, body").animate({
             scrollTop: target.offset().top - 56
           },
           1000,
@@ -24,7 +23,7 @@
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $(".js-scroll-trigger").click(function() {
+  $(".js-scroll-trigger").click(function () {
     $(".navbar-collapse").collapse("hide");
   });
 
@@ -35,7 +34,7 @@
   });
 
   // Collapse Navbar
-  var navbarCollapse = function() {
+  var navbarCollapse = function () {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
     } else if (window.location.href.includes("story")) {
@@ -103,7 +102,7 @@
 // custom js
 
 // type writer effect
-const TypeWriter = function(txtElement, words, wait) {
+const TypeWriter = function (txtElement, words, wait) {
   this.txtElement = txtElement;
   this.words = words;
   this.txt = "A Corporate Drop-Out";
@@ -114,7 +113,7 @@ const TypeWriter = function(txtElement, words, wait) {
 };
 
 // type method
-TypeWriter.prototype.type = function() {
+TypeWriter.prototype.type = function () {
   // current word index
   const current = this.wordIndex % this.words.length;
   // get full text of current word
@@ -168,44 +167,9 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 
-// scroll reveal animations
-// window.sr = ScrollReveal({ mobile: false });
-
-// sr.reveal(".landing-container h1", {
-//   origin: "left",
-//   distance: "300px",
-//   duration: 800,
-//   viewFactor: 0.1,
-//   delay: 500
-// });
-
-// sr.reveal(".landing-container .supporting-text p ", {
-//   origin: "right",
-//   distance: "300px",
-//   duration: 1600,
-//   viewFactor: 0.1,
-//   delay: 800
-// });
-
-// sr.reveal(".landing-container hr", {
-//   origin: "right",
-//   distance: "300px",
-//   duration: 1600,
-//   viewFactor: 0.1,
-//   delay: 1400
-// });
-
-// sr.reveal(".landing-container .supporting-text .btn ", {
-//   origin: "bottom",
-//   distance: "300px",
-//   duration: 1600,
-//   viewFactor: 0.1,
-//   delay: 1400
-// });
-// window.addEventListener('load', () => {
-//   sr.reveal('.landing-container', {
-//     viewFactor: 0.1,
-//     duration: 3000
-//   })
-
-// })
+$(document).ready(function () {
+  $(".lazyload").each(function () {
+    //* set the img src from data-src
+    $(this).attr("src", $(this).attr("data-src"));
+  });
+});
