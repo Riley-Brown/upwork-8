@@ -22,6 +22,7 @@ hr.light {
 a {
   color: $primary;
   @include transition-all;
+
   &:hover {
     color: darken($primary, 0.1);
   }
@@ -84,13 +85,14 @@ img::-moz-selection {
   display: flex;
   justify-content: center;
   margin: 0;
-  background: #7f7f7f;
+  background: #212529;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 10000;
+
   img {
     height: 200px;
     margin-top: 30vh;
