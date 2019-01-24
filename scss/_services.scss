@@ -1,16 +1,13 @@
 // Styling for the services section
 .service-box {
   max-width: 400px;
+  margin: auto;
 }
 
 #services {
   padding: 50px;
   background: $primary;
   color: #fff;
-
-  .container {
-    max-width: 960px;
-  }
 
   .text-muted {
     color: #fff !important;
@@ -27,5 +24,17 @@
 
   .text-center {
     padding: 0 !important;
+    margin: auto;
+  }
+  .row {
+    justify-content: center;
+  }
+  @media (min-width: 992px) {
+    .col-lg-3 {
+      flex: 0 0 20%;
+    }
+    .col-lg-3:nth-of-type(2) {
+      margin-left: 40px;
+    }
   }
 }
