@@ -1,21 +1,22 @@
-(function ($) {
-  "use strict"; // Start of use strict
+(function($) {
+  'use strict'; // Start of use strict
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (
-      location.pathname.replace(/^\//, "") ==
-      this.pathname.replace(/^\//, "") &&
+      location.pathname.replace(/^\//, '') ==
+        this.pathname.replace(/^\//, '') &&
       location.hostname == this.hostname
     ) {
       var target = $(this.hash);
-      target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
-        $("html, body").animate({
+        $('html, body').animate(
+          {
             scrollTop: target.offset().top - 56
           },
           1000,
-          "easeInOutExpo"
+          'easeInOutExpo'
         );
         return false;
       }
@@ -23,24 +24,24 @@
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $(".js-scroll-trigger").click(function () {
-    $(".navbar-collapse").collapse("hide");
+  $('.js-scroll-trigger').click(function() {
+    $('.navbar-collapse').collapse('hide');
   });
 
   // Activate scrollspy to add active class to navbar items on scroll
-  $("body").scrollspy({
-    target: "#mainNav",
+  $('body').scrollspy({
+    target: '#mainNav',
     offset: 57
   });
 
   // Collapse Navbar
-  var navbarCollapse = function () {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
-    } else if (window.location.href.includes("story")) {
-      $("#mainNav").addClass("navbar-shrink");
+  var navbarCollapse = function() {
+    if ($('#mainNav').offset().top > 100) {
+      $('#mainNav').addClass('navbar-shrink');
+    } else if (window.location.href.includes('story')) {
+      $('#mainNav').addClass('navbar-shrink');
     } else {
-      $("#mainNav").removeClass("navbar-shrink");
+      $('#mainNav').removeClass('navbar-shrink');
     }
   };
   // Collapse now if page is not at top
@@ -51,43 +52,43 @@
   // Scroll reveal calls
   window.sr = ScrollReveal();
 
-  sr.reveal(".sr-icon-1", {
+  sr.reveal('.sr-icon-1', {
     delay: 200,
     scale: 0
   });
-  sr.reveal(".sr-icon-2", {
+  sr.reveal('.sr-icon-2', {
     delay: 400,
     scale: 0
   });
-  sr.reveal(".sr-icon-3", {
+  sr.reveal('.sr-icon-3', {
     delay: 600,
     scale: 0
   });
-  sr.reveal(".sr-icon-4", {
+  sr.reveal('.sr-icon-4', {
     delay: 800,
     scale: 0
   });
-  sr.reveal(".sr-button", {
+  sr.reveal('.sr-button', {
     delay: 200,
-    distance: "15px",
-    origin: "bottom",
+    distance: '15px',
+    origin: 'bottom',
     scale: 0.8
   });
-  sr.reveal(".sr-contact-1", {
+  sr.reveal('.sr-contact-1', {
     delay: 200,
     scale: 0
   });
-  sr.reveal(".sr-contact-2", {
+  sr.reveal('.sr-contact-2', {
     delay: 400,
     scale: 0
   });
 
   // Magnific popup calls
-  $(".popup-gallery").magnificPopup({
-    delegate: "a",
-    type: "image",
-    tLoading: "Loading image #%curr%...",
-    mainClass: "mfp-img-mobile",
+  $('.popup-gallery').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    tLoading: 'Loading image #%curr%...',
+    mainClass: 'mfp-img-mobile',
     gallery: {
       enabled: true,
       navigateByImgClick: true,
@@ -102,10 +103,10 @@
 // custom js
 
 // type writer effect
-const TypeWriter = function (txtElement, words, wait) {
+const TypeWriter = function(txtElement, words, wait) {
   this.txtElement = txtElement;
   this.words = words;
-  this.txt = "A Corporate Drop-Out";
+  this.txt = 'A Corporate Drop-Out';
   this.wordIndex = 0;
   this.wait = parseInt(wait, 10);
   this.type();
@@ -113,7 +114,7 @@ const TypeWriter = function (txtElement, words, wait) {
 };
 
 // type method
-TypeWriter.prototype.type = function () {
+TypeWriter.prototype.type = function() {
   // current word index
   const current = this.wordIndex % this.words.length;
   // get full text of current word
@@ -144,7 +145,7 @@ TypeWriter.prototype.type = function () {
     typeSpeed = this.wait;
     // set deleting to true
     this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === "") {
+  } else if (this.isDeleting && this.txt === '') {
     this.isDeleting = false;
     // move to next word
     this.wordIndex++;
@@ -155,21 +156,21 @@ TypeWriter.prototype.type = function () {
 };
 
 // init on dom load
-window.addEventListener("load", init);
+window.addEventListener('load', init);
 
 // init
 function init() {
-  const txtElement = document.querySelector(".text-type");
-  const words = JSON.parse(txtElement.getAttribute("data-words"));
-  const wait = txtElement.getAttribute("data-wait");
+  const txtElement = document.querySelector('.text-type');
+  const words = JSON.parse(txtElement.getAttribute('data-words'));
+  const wait = txtElement.getAttribute('data-wait');
 
   // init type writer
   new TypeWriter(txtElement, words, wait);
 }
 
-$(document).ready(function () {
-  $(".lazyload").each(function () {
+$(window).on('load', function() {
+  $('.lazyload').each(function() {
     //* set the img src from data-src
-    $(this).attr("src", $(this).attr("data-src"));
+    $(this).attr('src', $(this).attr('data-src'));
   });
 });
