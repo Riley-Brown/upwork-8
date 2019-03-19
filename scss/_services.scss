@@ -26,13 +26,16 @@
     padding: 0 !important;
     margin: auto;
   }
+
   .row {
     justify-content: center;
   }
+
   @media (min-width: 992px) {
     .col-lg-3 {
       flex: 0 0 20%;
     }
+
     .col-lg-3:nth-of-type(2) {
       margin-left: 40px;
     }

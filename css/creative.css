@@ -239,6 +239,9 @@ img::-moz-selection {
   font-size: 1.3rem;
   line-height: 1.6;
 }
+.landing .supporting-text span:nth-of-type(1) {
+  font-size: 2.4rem;
+}
 .landing .supporting-text p {
   opacity: 0.85;
   line-height: 1.6;
@@ -318,6 +321,13 @@ img::-moz-selection {
 .featured-on {
   margin: 50px 0;
   font-size: 3rem;
+}
+
+#portfolio .btn {
+  margin: 50px auto;
+  text-align: center;
+  display: block;
+  width: 150px;
 }
 
 .portfolio-box {

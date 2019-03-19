@@ -3,13 +3,13 @@
   height: 100vh;
   padding-bottom: calc(10rem - 56px);
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../img/1500px.jpg");
+    url('../img/1500px.jpg');
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   @include background-cover;
 
-  @media(max-width: 600px) {
+  @media (max-width: 600px) {
     height: auto;
     background-position: right;
   }
@@ -37,7 +37,7 @@
     min-width: 600px;
     text-align: center;
 
-    @media(max-width: 992px) {
+    @media (max-width: 992px) {
       min-width: 100%;
       padding: 0 20px;
       margin-top: 10vh;
@@ -45,10 +45,10 @@
 
     h1 {
       font-size: 2.5rem;
-      font-family: "Lato", sans-serif;
+      font-family: 'Lato', sans-serif;
       font-weight: 900;
 
-      @media(max-width: 992px) {
+      @media (max-width: 992px) {
         font-size: 2.2rem;
       }
     }
@@ -57,11 +57,13 @@
   .supporting-text {
     font-size: 1.3rem;
     line-height: 1.6;
-
+    span:nth-of-type(1) {
+      font-size: 2.4rem;
+    }
     p {
       opacity: 0.85;
       line-height: 1.6;
-      font-family: "Lato", sans-serif;
+      font-family: 'Lato', sans-serif;
       max-width: 500px;
       margin: auto;
 
@@ -81,7 +83,7 @@
   }
 }
 
-.text-type>.txt {
+.text-type > .txt {
   border-right: 0.3rem solid rgba(255, 255, 255, 0.8);
   animation: blinkTextCursor 500ms steps(40) infinite normal;
 }
