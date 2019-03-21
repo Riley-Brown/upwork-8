@@ -1,0 +1,19 @@
+.icons {
+  display: flex;
+  max-width: 1140px;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  // width: 90%;
+  .icon {
+    // width: 33.333%;
+    // margin: 0 20px;
+    // margin: auto;
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    img {
+      // max-height: 320px;
+      width: 100%;
+    }
+  }
+}

@@ -435,6 +435,21 @@ img::-moz-selection {
   }
 }
 
+.icons {
+  display: flex;
+  max-width: 1140px;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.icons .icon {
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+}
+.icons .icon img {
+  width: 100%;
+}
+
 .text-primary {
   color: #d94aa0 !important;
 }
