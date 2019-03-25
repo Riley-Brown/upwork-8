@@ -462,6 +462,18 @@ img::-moz-selection {
   flex: 0 0 33.333%;
   max-width: 33.333%;
 }
+@media (max-width: 850px) {
+  .icons .icon {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .icons .icon {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
 .icons .icon img {
   width: 100%;
 }
