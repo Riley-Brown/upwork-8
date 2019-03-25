@@ -168,9 +168,14 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 
-$(window).on('load', function() {
-  $('.lazyload').each(function() {
-    //* set the img src from data-src
-    $(this).attr('src', $(this).attr('data-src'));
-  });
-});
+// if (
+//   window.location.pathname === '/' ||
+//   window.location.pathname === '/index.html'
+// ) {
+//   $(window).on('load', function() {
+//     $('.lazyload').each(function() {
+//       //* set the img src from data-src
+//       $(this).attr('src', $(this).attr('data-src'));
+//     });
+//   });
+// }
