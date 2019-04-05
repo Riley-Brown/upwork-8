@@ -17,14 +17,22 @@
   border: none;
   color: red;
   font-size: 3rem;
-  float: right;
-  position: absolute;
-  top: -55px;
+  // float: right;
+  // position: absolute;
+
   right: 0;
   z-index: 10000 !important;
   cursor: pointer;
+  position: sticky;
+  top: 0;
+  display: inline !important;
+  max-width: 30px;
 }
 
 .modal-content {
   background: none;
+  border: none;
+  @media (max-width: 600px) {
+    margin-top: 10%;
+  }
 }
