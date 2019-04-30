@@ -374,12 +374,12 @@ img::-moz-selection {
   max-width: 30px;
 }
 
-.modal-content {
+#featured-on-content {
   background: none;
   border: none;
 }
 @media (max-width: 600px) {
-  .modal-content {
+  #featured-on-content {
     margin-top: 10%;
   }
 }
