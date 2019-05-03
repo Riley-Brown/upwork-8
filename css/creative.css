@@ -15,7 +15,7 @@ body {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #d94aa0;
+  border-color: #d4015e;
 }
 
 hr.light {
@@ -23,13 +23,13 @@ hr.light {
 }
 
 a {
-  color: #d94aa0;
+  color: #d4015e;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
 a:hover {
-  color: #d94aa0;
+  color: #d3015e;
 }
 
 h1,
@@ -42,7 +42,7 @@ h6 {
 }
 
 .bg-primary {
-  background-color: #d94aa0 !important;
+  background-color: #d4015e !important;
 }
 
 .bg-dark {
@@ -116,11 +116,11 @@ img::-moz-selection {
 #mainNav .navbar-brand {
   font-weight: 700;
   text-transform: uppercase;
-  color: #d94aa0;
+  color: #d4015e;
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
 }
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #d94aa0;
+  color: #d3015e;
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -131,11 +131,11 @@ img::-moz-selection {
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-  color: #d94aa0;
+  color: #d4015e;
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-  color: #d94aa0 !important;
+  color: #d4015e !important;
   background-color: transparent;
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
@@ -169,10 +169,10 @@ img::-moz-selection {
     background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #d94aa0;
+    color: #d4015e;
   }
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #d94aa0;
+    color: #d3015e;
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
 #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -180,7 +180,7 @@ img::-moz-selection {
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #d94aa0;
+    color: #d4015e;
   }
 }
 
@@ -221,7 +221,7 @@ img::-moz-selection {
   color: #fff;
   min-width: 600px;
   text-align: center;
-  margin-bottom: 10%;
+  margin-bottom: 6%;
   margin-right: 40px;
 }
 @media (max-width: 992px) {
@@ -306,6 +306,7 @@ img::-moz-selection {
 #lead-magnet {
   background: #fff;
   color: #333;
+  padding: 70px 0 0px;
 }
 @media (max-width: 992px) {
   #lead-magnet {
@@ -441,7 +442,7 @@ img::-moz-selection {
 }
 #lead-magnet form #submit {
   width: 28%;
-  background: #d94aa0;
+  background: #d4015e;
   color: #fff;
   font-weight: 500;
   font-size: 1.2rem;
@@ -493,7 +494,7 @@ img::-moz-selection {
 }
 #lead-magnet #mc_embed_signup_scroll #mc-embedded-subscribe {
   width: 100%;
-  background: #d94aa0;
+  background: #d4015e;
   color: #fff;
   font-size: 1.2rem;
   cursor: pointer;
@@ -515,7 +516,7 @@ img::-moz-selection {
 
 #services {
   padding: 50px;
-  background: #d94aa0;
+  background: #d4015e;
   color: #fff;
 }
 #services .text-muted {
@@ -594,7 +595,7 @@ img::-moz-selection {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(217, 74, 160, 0.9);
+  background: rgba(212, 1, 94, 0.9);
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -670,7 +671,7 @@ img::-moz-selection {
   max-width: 500px;
 }
 .about-section .btn {
-  background: #d94aa0;
+  background: #d4015e;
   color: white;
 }
 .about-section img {
@@ -714,7 +715,7 @@ img::-moz-selection {
 }
 
 .text-primary {
-  color: #d94aa0 !important;
+  color: #d4015e !important;
 }
 
 .btn {
@@ -730,12 +731,12 @@ img::-moz-selection {
 }
 
 .btn-primary {
-  background-color: #d94aa0;
-  border-color: #d94aa0;
+  background-color: #d4015e;
+  border-color: #d4015e;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  background-color: #d53595 !important;
+  background-color: #bb0153 !important;
 }
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
