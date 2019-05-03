@@ -463,6 +463,7 @@ img::-moz-selection {
   font-size: 2.5rem;
   font-family: "Lato", sans-serif;
   font-weight: 900;
+  max-width: 500px;
 }
 @media (max-width: 860px) {
   .about-section .my-story-container {
@@ -480,6 +481,7 @@ img::-moz-selection {
   max-height: 500px;
   margin-right: auto;
   display: block;
+  margin-left: 5px;
 }
 @media (max-width: 992px) {
   .about-section img {
