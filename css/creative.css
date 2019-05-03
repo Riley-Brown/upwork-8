@@ -319,43 +319,43 @@ img::-moz-selection {
 #lead-magnet .row {
   justify-content: center;
 }
-#lead-magnet .col-sm-8 h1 {
-  font-size: 4rem;
+#lead-magnet .col-sm-7 h1 {
+  font-size: 3.5rem;
   font-weight: 600;
   text-align: center;
 }
 @media (max-width: 992px) {
-  #lead-magnet .col-sm-8 h1 {
+  #lead-magnet .col-sm-7 h1 {
     font-size: 3rem;
   }
 }
 @media (max-width: 900px) {
-  #lead-magnet .col-sm-8 h1 {
+  #lead-magnet .col-sm-7 h1 {
     text-align: center;
   }
 }
 @media (max-width: 500px) {
-  #lead-magnet .col-sm-8 h1 {
+  #lead-magnet .col-sm-7 h1 {
     font-size: 2.2rem;
   }
 }
-#lead-magnet .col-sm-8 p {
-  font-size: 1.4rem;
+#lead-magnet .col-sm-7 p {
+  font-size: 1.3rem;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 @media (max-width: 992px) {
-  #lead-magnet .col-sm-8 p {
-    font-size: 1.3rem;
+  #lead-magnet .col-sm-7 p {
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 500px) {
-  #lead-magnet .col-sm-8 p {
+  #lead-magnet .col-sm-7 p {
     font-size: 1rem;
   }
 }
 @media (max-width: 900px) {
-  #lead-magnet .col-sm-8 {
+  #lead-magnet .col-sm-7 {
     flex: 0 0 90%;
     max-width: 90%;
   }
@@ -382,8 +382,8 @@ img::-moz-selection {
   display: flex;
 }
 #lead-magnet .features img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin-right: 15px;
 }
 @media (max-width: 992px) {
@@ -401,7 +401,7 @@ img::-moz-selection {
   }
 }
 #lead-magnet .features span {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 30px;
 }
 @media (max-width: 500px) {
@@ -646,7 +646,7 @@ img::-moz-selection {
 .about-section {
   color: #222;
   line-height: 2;
-  padding: 50px 50px 0;
+  padding: 30px 50px 0;
 }
 .about-section .my-story-container {
   display: flex;
