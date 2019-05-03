@@ -1,23 +1,50 @@
 #lead-magnet {
   background: #fff;
   color: #333;
+  @media (max-width: 992px) {
+    padding: 70px 0;
+  }
   .container {
-    @media (max-width: 1200px) {
-      max-width: 1000px;
-      padding-left: 0;
-      padding-right: 0;
-    }
+    max-width: 1200px;
   }
   .row {
     justify-content: center;
   }
-  .col-sm-6 {
+  .col-sm-8 {
     h1 {
       font-size: 4rem;
       font-weight: 600;
+      text-align: center;
+      @media (max-width: 992px) {
+        font-size: 3rem;
+      }
+      @media (max-width: 900px) {
+        text-align: center;
+      }
     }
     p {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      @media (max-width: 992px) {
+        font-size: 1.3rem;
+      }
+    }
+    @media (max-width: 900px) {
+      flex: 0 0 90%;
+      max-width: 90%;
+    }
+  }
+  .book-image {
+    img {
+      display: block;
+      margin: auto;
+      width: 100%;
+      // height: 100%;
+    }
+    @media (max-width: 900px) {
+      flex: 0 0 40%;
+      max-width: 40%;
       margin-bottom: 20px;
     }
   }
@@ -27,15 +54,24 @@
       width: 50px;
       height: 50px;
       margin-right: 15px;
-      margin-bottom: 30px;
+
+      @media (max-width: 992px) {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
     }
     span {
       font-size: 1.5rem;
+      margin-bottom: 30px;
     }
   }
   form {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
     #email,
     #submit {
       border-radius: 5px;
@@ -46,6 +82,13 @@
       width: 70%;
       font-weight: 500;
       font-size: 1.2rem;
+      @media (max-width: 1200px) {
+        width: 75%;
+      }
+      @media (max-width: 992px) {
+        width: 90%;
+        margin-bottom: 10px;
+      }
     }
     #submit {
       width: 28%;
@@ -53,6 +96,50 @@
       color: #fff;
       font-weight: 500;
       font-size: 1.2rem;
+      cursor: pointer;
+      @media (max-width: 1200px) {
+        width: 23%;
+      }
+      @media (max-width: 992px) {
+        width: 90%;
+      }
+    }
+  }
+  #mc_embed_signup_scroll {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    label {
+      font-size: 1.2rem;
+    }
+    #mce-EMAIL {
+      font-weight: 500;
+      font-size: 1.2rem;
+      @media (max-width: 1200px) {
+        width: 75%;
+      }
+      @media (max-width: 992px) {
+        width: 90%;
+        margin-bottom: 10px;
+      }
+    }
+    #mce-EMAIL,
+    #mce-FNAME,
+    #mce-LNAME,
+    #mc-embedded-subscribe {
+      border-radius: 5px;
+      border: 1px solid lightgrey;
+      padding: 15px;
+      width: 100%;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+    #mc-embedded-subscribe {
+      width: 100%;
+      background: $primary;
+      color: #fff;
+      font-size: 1.2rem;
+      cursor: pointer;
     }
   }
 }

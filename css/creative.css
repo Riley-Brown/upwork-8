@@ -307,23 +307,59 @@ img::-moz-selection {
   background: #fff;
   color: #333;
 }
-@media (max-width: 1200px) {
-  #lead-magnet .container {
-    max-width: 1000px;
-    padding-left: 0;
-    padding-right: 0;
+@media (max-width: 992px) {
+  #lead-magnet {
+    padding: 70px 0;
   }
+}
+#lead-magnet .container {
+  max-width: 1200px;
 }
 #lead-magnet .row {
   justify-content: center;
 }
-#lead-magnet .col-sm-6 h1 {
+#lead-magnet .col-sm-8 h1 {
   font-size: 4rem;
   font-weight: 600;
+  text-align: center;
 }
-#lead-magnet .col-sm-6 p {
-  font-size: 1.5rem;
+@media (max-width: 992px) {
+  #lead-magnet .col-sm-8 h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 900px) {
+  #lead-magnet .col-sm-8 h1 {
+    text-align: center;
+  }
+}
+#lead-magnet .col-sm-8 p {
+  font-size: 1.4rem;
+  line-height: 1.6;
   margin-bottom: 20px;
+}
+@media (max-width: 992px) {
+  #lead-magnet .col-sm-8 p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 900px) {
+  #lead-magnet .col-sm-8 {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+}
+#lead-magnet .book-image img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+@media (max-width: 900px) {
+  #lead-magnet .book-image {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-bottom: 20px;
+  }
 }
 #lead-magnet .features {
   display: flex;
@@ -332,14 +368,26 @@ img::-moz-selection {
   width: 50px;
   height: 50px;
   margin-right: 15px;
-  margin-bottom: 30px;
+}
+@media (max-width: 992px) {
+  #lead-magnet .features img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
 }
 #lead-magnet .features span {
   font-size: 1.5rem;
+  margin-bottom: 30px;
 }
 #lead-magnet form {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 992px) {
+  #lead-magnet form {
+    flex-direction: column;
+  }
 }
 #lead-magnet form #email,
 #lead-magnet form #submit {
@@ -352,12 +400,75 @@ img::-moz-selection {
   font-weight: 500;
   font-size: 1.2rem;
 }
+@media (max-width: 1200px) {
+  #lead-magnet form #email {
+    width: 75%;
+  }
+}
+@media (max-width: 992px) {
+  #lead-magnet form #email {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+}
 #lead-magnet form #submit {
   width: 28%;
   background: #d94aa0;
   color: #fff;
   font-weight: 500;
   font-size: 1.2rem;
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  #lead-magnet form #submit {
+    width: 23%;
+  }
+}
+@media (max-width: 992px) {
+  #lead-magnet form #submit {
+    width: 90%;
+  }
+}
+#lead-magnet #mc_embed_signup_scroll {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#lead-magnet #mc_embed_signup_scroll label {
+  font-size: 1.2rem;
+}
+#lead-magnet #mc_embed_signup_scroll #mce-EMAIL {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+@media (max-width: 1200px) {
+  #lead-magnet #mc_embed_signup_scroll #mce-EMAIL {
+    width: 75%;
+  }
+}
+@media (max-width: 992px) {
+  #lead-magnet #mc_embed_signup_scroll #mce-EMAIL {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+}
+#lead-magnet #mc_embed_signup_scroll #mce-EMAIL,
+#lead-magnet #mc_embed_signup_scroll #mce-FNAME,
+#lead-magnet #mc_embed_signup_scroll #mce-LNAME,
+#lead-magnet #mc_embed_signup_scroll #mc-embedded-subscribe {
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+#lead-magnet #mc_embed_signup_scroll #mc-embedded-subscribe {
+  width: 100%;
+  background: #d94aa0;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .modal-body {
