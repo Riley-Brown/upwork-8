@@ -250,6 +250,12 @@ img::-moz-selection {
   justify-content: flex-end;
   align-items: center;
 }
+.landing .supporting-text p {
+  max-width: 700px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.4;
+  opacity: 0.9;
+}
 .landing .supporting-text span:nth-of-type(1) {
   font-family: AgencyFB;
   letter-spacing: 6px;
@@ -276,6 +282,9 @@ img::-moz-selection {
   font-style: italic;
   max-width: 500px;
   margin-bottom: 20px;
+  opacity: 0.8;
+  line-height: 1.2;
+  font-size: 1.2rem;
 }
 .landing .supporting-text span {
   opacity: 0.85;
@@ -284,6 +293,8 @@ img::-moz-selection {
 }
 .landing .supporting-text a {
   font-weight: 400;
+  border-radius: 10px;
+  padding: 10px 25px;
 }
 .landing hr {
   margin-top: 30px;

@@ -2,8 +2,7 @@
 .landing {
   height: 100vh;
   padding-bottom: calc(10rem - 56px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('../img/1500px.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/1500px.jpg");
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -47,7 +46,7 @@
 
     h1 {
       font-size: 2.5rem;
-      font-family: 'Lato', sans-serif;
+      font-family: "Lato", sans-serif;
       font-weight: 900;
 
       @media (max-width: 992px) {
@@ -63,12 +62,19 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    p {
+      max-width: 700px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.4;
+      opacity: 0.9;
+    }
     span:nth-of-type(1) {
       font-family: AgencyFB;
       letter-spacing: 6px;
       font-size: 6rem;
       font-weight: 400;
       line-height: 1.1;
+
       @media (max-width: 660px) {
         font-size: 3rem;
       }
@@ -84,10 +90,13 @@
       font-style: italic;
       max-width: 500px;
       margin-bottom: 20px;
+      opacity: 0.8;
+      line-height: 1.2;
+      font-size: 1.2rem;
     }
     span {
       opacity: 0.85;
-      font-family: 'Lato', sans-serif;
+      font-family: "Lato", sans-serif;
       margin: auto;
       // margin-bottom: 20px;
 
@@ -98,6 +107,8 @@
 
     a {
       font-weight: 400;
+      border-radius: 10px;
+      padding: 10px 25px;
     }
   }
 
