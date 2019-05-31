@@ -346,10 +346,12 @@ img::-moz-selection {
   }
 }
 #lead-magnet .col-sm-7 p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1.6;
-  margin-bottom: 20px;
   text-align: center;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
 }
 @media (max-width: 992px) {
   #lead-magnet .col-sm-7 p {
