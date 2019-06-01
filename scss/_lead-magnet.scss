@@ -13,14 +13,14 @@
   }
   .col-sm-7 {
     h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: 600;
       text-align: center;
       @media (max-width: 900px) {
-        text-align: center;
+        font-size: 1.7rem;
       }
       @media (max-width: 500px) {
-        font-size: 2rem;
+        font-size: 1.4rem;
       }
     }
     p {
